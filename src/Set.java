@@ -1,6 +1,6 @@
 public interface Set<T> {
     boolean add(T t);
     void clear();
-    boolean remove();
+    boolean remove(Object element);
     int size();
 }

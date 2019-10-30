@@ -16,12 +16,16 @@ public class Sets {
 
         test.add(income);
         test.add(expenses);
-        System.out.println(test);
-        java.util.HashSet<Money> test2 = new java.util.HashSet<>();
+        System.out.println(test + "size " + test.size());
 
-        test2.add(income);
-        test2.add(expenses);
-        System.out.println(test2);
+        test.remove(expenses);
+        System.out.println(test  + "size " + test.size());
+
+        test.add(income);
+        System.out.println(test);
+        test.clear();
+        System.out.println(test);
+
 
     }
 
@@ -34,6 +38,5 @@ public class Sets {
             this.amount = amount;
             this.currencyCode = currencyCode;
         }
-
     }
 }

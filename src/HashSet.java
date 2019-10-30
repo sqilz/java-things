@@ -28,17 +28,17 @@ public class HashSet<T> implements Set<T> {
 
     @Override
     public void clear() {
-
+        this.map = new HashMap<>();
     }
 
     @Override
-    public boolean remove() {
-        return false;
+    public boolean remove(Object element) {
+        return this.map.remove(element)==DUMMY;
     }
 
     @Override
     public int size() {
-        return 0;
+        return this.map.size();
     }
 
     @Override
