@@ -1,3 +1,5 @@
+package main;
+
 import java.util.HashMap;
 
 public class HashSet<T> implements Set<T> {
@@ -43,7 +45,7 @@ public class HashSet<T> implements Set<T> {
 
     @Override
     public String toString() {
-        return "HashSet[" +
+        return "main.HashSet[" +
                 map.keySet() +
                 ']';
     }

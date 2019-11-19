@@ -1,4 +1,8 @@
-public class TreeSet<T> implements Set<T> {
+package main;
+
+import java.util.Comparator;
+
+public class TreeSet<T> implements Set<T>, Comparator<T> {
 
     public TreeSet() {
 
@@ -21,6 +25,11 @@ public class TreeSet<T> implements Set<T> {
 
     @Override
     public int size() {
+        return 0;
+    }
+
+    @Override
+    public int compare(T o1, T o2) {
         return 0;
     }
 }

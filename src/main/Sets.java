@@ -1,3 +1,5 @@
+package main;
+
 import lombok.EqualsAndHashCode;
 
 public class Sets {
@@ -26,6 +28,10 @@ public class Sets {
         test.clear();
         System.out.println(test);
 
+        TreeMap<String, Integer> treeMap = new TreeMap<>();
+        treeMap.put("test", 1);
+
+        System.out.println(treeMap);
 
     }
 
